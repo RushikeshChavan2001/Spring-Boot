@@ -8,8 +8,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class DemoApplication implements CommandLineRunner {
 
+//	@Autowired
+//	JavaBeansUsingAnnotation obj1;
+//
+//	@Autowired
+//	JavaBeansUsingAnnotation obj2;
+
+
 	@Autowired
-	JavaBeansUsingAnnotation obj;
+	DBService DB;
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
@@ -20,6 +27,16 @@ public class DemoApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		obj.message();
+//		obj1.message1();
+//		System.out.println(obj1.hashCode());
+//
+//		obj2.message2();
+//		System.out.println(obj2.hashCode());
+
+		System.out.println(DB.getData());
+
+
+
+
 	}
 }
