@@ -14,6 +14,17 @@ public class DemoApplication implements CommandLineRunner {
 //	@Autowired
 //	JavaBeansUsingAnnotation obj2;
 
+	@Autowired
+	JavaBeanUsingConfig obj1;
+
+	@Autowired
+	JavaBeanUsingConfig obj2;
+
+
+//
+//	@Autowired
+//	JavaBeansUsingAnnotation obj2;
+
 
 	@Autowired
 	DBService DB;
@@ -32,10 +43,16 @@ public class DemoApplication implements CommandLineRunner {
 //
 //		obj2.message2();
 //		System.out.println(obj2.hashCode());
+//
+//		System.out.println(DB.getData());
 
-		System.out.println(DB.getData());
 
 
+		obj1.message();
+		System.out.println(obj1.hashCode());
+
+//		obj2.message();
+//		System.out.println(obj2.hashCode());
 
 
 	}
