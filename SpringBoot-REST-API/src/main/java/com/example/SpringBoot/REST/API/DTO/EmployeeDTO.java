@@ -1,10 +1,14 @@
 package com.example.SpringBoot.REST.API.DTO;
 
 
+import lombok.NoArgsConstructor;
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 //data Transfer Object
+@NoArgsConstructor
+
 public class EmployeeDTO {
 
 
